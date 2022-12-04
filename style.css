@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla";
+  font-size: 16px;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 44%, 54%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsla(217, 22%, 67%, 0.767);
+}
+
+.container {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  justify-items: center;
+  align-content: center;
+  max-width: 23rem;
+  max-height: 54rem;
+  padding: 20px;
+  background-color: hsl(207, 45%, 91%);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px hsla(0, 0%, 35%, 0.1);
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-auto-rows: minmax(0, 16.75rem);
+    grid-template-columns: 40rem 14rem;
+    min-width: 90rem;
+    min-height: 50rem;
+    padding: 20px;
+    background-color: hsl(207, 45%, 91%);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px hsla(0, 0%, 35%, 0.1);
+  }
+}
+
+/* TOP CONTAINER */
+
+.white-container {
+  padding: 30px;
+  max-width: 20rem;
+  max-height: 17rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px 5px 0 0;
+}
+
+@media only screen and (min-width: 1440px) {
+  .white-container {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 40rem;
+    min-height: 14rem;
+    box-shadow: 5px 5px 10px hsla(0, 0%, 35%, 0.1);
+  }
+}
+
+.top-heading1 {
+  color: var(--cyan);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .top-heading1 {
+    color: var(--cyan);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+}
+
+.top-heading2 {
+  color: var(--bright-yellow);
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .top-heading2 {
+    color: var(--bright-yellow);
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
+}
+
+.top-paragraph1 {
+  color: var(--grayish-blue);
+  font-size: 0.87rem;
+  margin-top: 20px;
+  line-height: 22px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .top-paragraph1 {
+    color: var(--grayish-blue);
+    font-size: 1rem;
+    line-height: 22px;
+  }
+}
+
+/* MIDDLE CONTAINER */
+
+.dark-cyan-container {
+  display: grid;
+  padding: 30px;
+  width: 20rem;
+  height: 14rem;
+  background-color: var(--cyan);
+}
+
+@media only screen and (min-width: 1440px) {
+  .dark-cyan-container {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: -20rem;
+    min-width: 20rem;
+    min-height: 16rem;
+    border-radius: 0 0 0 5px;
+    box-shadow: 5px 5px 10px hsla(0, 0%, 35%, 0.1);
+  }
+}
+
+.mid-heading1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 32px;
+  color: hsl(0, 0%, 100%);
+}
+
+.mid-heading2 {
+  color: hsla(0, 0%, 100%, 0.5);
+  font-weight: 300;
+}
+
+.mid-paragraph {
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: var(--bright-yellow);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 25px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.1);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--light-cyan);
+}
+
+/* BOTTOM CONTAINER */
+
+.light-cyan-container {
+  padding: 30px;
+  width: 20rem;
+  height: 14rem;
+  border-radius: 0 0 5px 5px;
+  background-color: var(--light-cyan);
+}
+
+@media only screen and (min-width: 1440px) {
+  .light-cyan-container {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: -20rem;
+    min-width: 20rem;
+    min-height: 16rem;
+    border-radius: 0 0 5px 0;
+    box-shadow: 5px 5px 10px hsla(0, 0%, 35%, 0.1);
+  }
+}
+
+.bottom-heading {
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bottom-paragraph {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 15px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+  font-family: "Karla";
+  max-width: 23.44rem;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  line-height: 25px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  .attribution {
+    position: relative;
+    top: 200%;
+    left: 160%;
+  }
+}
